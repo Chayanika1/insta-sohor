@@ -1,6 +1,7 @@
 let posts=[ ];
 
-const likedPostsId = [];
+const likedPostsId=[];
+ 
 const reportedPostsId = [];
 
 const getLikedPosts = () => {
@@ -16,7 +17,10 @@ const isLiked = (id) => {
 };
 
 const addToLiked = (id) => {
-    likedPostsId.post(id); 
+    //likedPostsId.post(id);
+    likedPostsId.push(id);
+     
+    //displayLikedPosts(id);
     showPosts(posts);
 };
 
